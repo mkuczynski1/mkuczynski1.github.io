@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang=en-us>
+<head>
+	<title>ITMD 361 - Lab 4</title>
+	<link rel="stylesheet" href="styles/styles.css">
+</head>
+<body>
+	<div id="content">
+		<h2> Volunteer Form</h2>
+		<form action="http://bloomingdale.sat.iit.edu/kriedan/lab3formscript.php" method="post">
+			<div class="formsection">
+				<h4> My Info</h4>
+				<label> First Name: <input type="text" name="first_name_field" placeholder="Michael"></label><br><br>
+				<label> Last Name: <input type="text" name="last_name_field" placeholder="Kuczynski"></label><br><br>
+				<label> Phone Number: <input type="text" name="phone_field" placeholder="(xxx)xxx-xxxx"></label><br><br>
+				<label> Email Address: <input type="text" name="email_field" placeholder="mkuczynski@email.com"></label><br><br>
+				<label> Gender: <input type="radio" name ="gender_field" value="Male">Male <input type="radio" name ="gender_field" value="Female">Female</label><br><br>
+				<label> Age: </label>
+				<select name="age_field">
+					<option value="under 18"> under 18</option>
+					<option value="18-24"> 18-24</option>
+					<option value="25-34"> 25-34</option>
+					<option value="45-54"> 45-54</option>
+					<option value="55-64"> 55-64</option>
+					<option value="65 and over"> 65 and over</option>
+				</select>
+				
+			</div>
+			<br>
+			<h3> My Availability</h3>
+			<div class="formsection">
+				<label> Days Available: </label><br>
+				<input type="checkbox" name="available_field[]" value="Sunday"> Sunday <br>
+				<input type="checkbox" name="available_field[]" value="Monday"> Monday <br>
+				<input type="checkbox" name="available_field[]" value="Tuesday"> Tuesday <br>
+				<input type="checkbox" name="available_field[]" value="Wednesday"> Wednesday <br>
+				<input type="checkbox" name="available_field[]" value="Thursday"> Thursday <br>
+				<input type="checkbox" name="available_field[]" value="Friday"> Friday <br>
+				<input type="checkbox" name="available_field[]" value="Saturday"> Saturday <br>
+				<br>
+				<label> Any Comments? <br>
+				<textarea name="comments_field" rows="6" cols="40"> </textarea>
+				</label>
+			</div>
+			<br>
+			<input type="hidden" name="hidden_field" value="mkuczyn1">
+			<input type="submit" value="Send Me">
+		</form>
+	</div>
+</body>
+</html>
